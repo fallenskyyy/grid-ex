@@ -1,0 +1,35 @@
+:root{
+    --border-box:1px solid black
+}
+
+.wrapper{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 300px 800px;
+    grid-template-rows: 100px 100px 500px 100px;
+}
+
+.header, .side-bar, .nav, .footer, .article{
+    border: var(--border-box);
+    border-radius: 3px;
+}
+
+.header{
+    grid-column: 1 / 4;
+}
+
+.side-bar{
+    grid-row: 2 / 4;
+}
+
+.nav{
+    grid-column: 2 / 4;
+}
+
+.article{
+    grid-column: 2 / 4;
+}
+
+.footer{
+    grid-column: 1 / 4;
+}
